@@ -1,0 +1,97 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start ;
+  align-items: center;
+  height:80vh ;
+  width: 400px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('C:\Users\Chanthini\OneDrive\Desktop\REACT js\my-todo\public\Img\bg pic.jpg');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px 0px #4299a8; 
+}
+h1{
+  font-size: 38px;
+  margin-bottom: 12px;
+  margin-top: 18px;
+}
+.form-input{
+  outline: none;
+  font-size:16px;
+  margin: 4px;
+  padding: 4px;
+  width: 290px;
+  border-radius: 5px;
+  background: #caf1f8;
+  border: none;
+  box-shadow: 2px 2px 3px 0px #4299a8;
+}
+.btn{
+  font-size:16px;
+  margin: 4px;
+  padding: 2.5px;
+  border-radius: 4px;
+  background: #caf1f8;
+  border: none;
+  box-shadow: 1px 1px 2px 0px #4299a8;
+}
+.form-input:focus{
+  border: 1px solid #4299a8; 
+  background-color: #fff; 
+  color: #333;
+}
+.btn:hover {
+  border: 1px solid #4299a8; 
+  background-color: #4299a8; 
+  color: #333;
+}
+.form-input:hover{
+  font-size: 17px;
+}
+.list-container{
+  display: flex;
+  align-items: space-between;
+  justify-content: flex-start;
+  flex-direction: column;
+  max-height: 280px;
+  overflow: auto;
+  width: 345px;
+  margin: 0px 0px 5px 0px;
+  padding: 0px 0px 0px ;
+  border: 1 px solid, red;
+}
+.list-container::-webkit-scrollbar {
+  width: 4px;
+}
+.list-container::-webkit-scrollbar-thumb {
+  background-color: #c49ba1;
+  border-radius: 4px;
+}
+.list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px 10px 10px; 
+}
+.list input[type="checkbox"] {
+  margin-right: 10px; 
+  font-size: 20px;
+  width: 16px;  
+  height: 20px;
+}
+.list label {
+  flex-grow: 1;
+}
+.delete, .edit {
+  background: none;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  color: #caf1f8;
+}
+.delete:hover, .edit:hover{
+  color: #65b3c1;
+
+}
