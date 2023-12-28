@@ -6,8 +6,13 @@ const List = ({ todo, handleCheck, handleDelete, handleEdit }) => {
   const [isEditing, setEditing] = useState(false);
   const [newText, setNewText] = useState(todo.text);
 
-  const handleEditClick = () => {
+  const handleEditClick = (e) => {
     setEditing(true);
+e.preventDefault();
+setTimeout(()=>{
+  var el = document.getElementById('edited-msg');
+  el.focus();
+})
   };
 
 
@@ -28,6 +33,7 @@ const List = ({ todo, handleCheck, handleDelete, handleEdit }) => {
       {isEditing ? (
         <div className='edit-txt-container'>
           <input
+          id='edited-msg'
           className='edit-txt'
             type='text'
             value={newText}
@@ -38,11 +44,14 @@ const List = ({ todo, handleCheck, handleDelete, handleEdit }) => {
       ) : (
         <>
           <label className='txt-label'>{todo.text}</label>
-          <button className='edit' onClick={handleEditClick} role='button'>
+          {/* <button className='edit' onClick={handleEditClick} role='button'>
             <CiEdit />
-          </button>
+          </button> */}
         </>
       )}
+      <button className='edit' onClick={handleEditClick} role='button'>
+            <CiEdit />
+          </button>
       <button
         className='delete'
         role='button'
