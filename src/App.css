@@ -5,7 +5,7 @@
   align-items: center;
   height:80vh ;
   width: 400px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('C:\Users\Chanthini\OneDrive\Desktop\REACT js\my-todo\public\Img\bg pic.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/Img/bg\ pic.jpg');
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
@@ -94,4 +94,58 @@ h1{
 .delete:hover, .edit:hover{
   color: #65b3c1;
 
+}
+
+/* New css */
+.edit-txt{
+  background-color: transparent;
+  border: none;
+  width: 100%;
+}
+.edit-txt:focus{
+  border: none;
+}
+.edit-txt:focus-visible{
+  outline: none;
+  border: none;
+}
+.list{
+  justify-content: initial;
+}
+.txt-label{
+  max-width: 70%;
+  overflow-wrap: break-word;
+}
+.edit-txt-container{
+  width: 80%;
+}
+.form-input {
+  height: 35px;
+  border: 1px solid transparent;
+}
+.btn{
+  border: 1px solid transparent;
+  padding: 8px;
+  cursor: pointer;
+}
+.flex{
+  display: flex;
+}
+.container {
+  height: 65vh;
+}
+.heading{
+  height: 10%;
+}
+.inputs{
+  height: 25%;
+}
+.container .footer{
+  height: 10%;
+}
+.container .list-item{
+  height: 55%;
+}
+.list-container{
+max-height: 100%;
 }

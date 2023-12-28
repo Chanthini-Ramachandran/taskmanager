@@ -4,7 +4,7 @@ import TodoList from './TodoList';
 const Content = ({todos, handleCheck, handleDelete, handleEdit}) => {
     
   return ( 
-    <form>
+    <form className='list-item'>
       {(todos.length) ? (
         <TodoList 
           todos = {todos}

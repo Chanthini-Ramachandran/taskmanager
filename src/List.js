@@ -26,8 +26,9 @@ const List = ({ todo, handleCheck, handleDelete, handleEdit }) => {
         onChange={() => handleCheck(todo.id)}
       />
       {isEditing ? (
-        <div>
+        <div className='edit-txt-container'>
           <input
+          className='edit-txt'
             type='text'
             value={newText}
             onChange={(e) => setNewText(e.target.value)}
@@ -36,7 +37,7 @@ const List = ({ todo, handleCheck, handleDelete, handleEdit }) => {
         </div>
       ) : (
         <>
-          <label>{todo.text}</label>
+          <label className='txt-label'>{todo.text}</label>
           <button className='edit' onClick={handleEditClick} role='button'>
             <CiEdit />
           </button>
